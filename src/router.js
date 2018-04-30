@@ -6,13 +6,13 @@ var router = function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
 
   $routeProvider.when('/:id', {
-    templateUrl: 'show/show-seabird-colony.html',
-    controller: 'SeabirdColonyShowController'
-  }).when('/', {
-    templateUrl: 'search/search.html',
-    controller: 'SeabirdColonySearchController',
-    reloadOnSearch: false
-  });
+   templateUrl: 'show/show-expedition-track.html',
+   controller: 'ExpeditionTrackShowController'
+ }).when('/', {
+   templateUrl: 'search/search.html',
+   controller: 'ExpeditionTrackSearchController',
+   reloadOnSearch: false
+ });
 };
 
 module.exports = router;
